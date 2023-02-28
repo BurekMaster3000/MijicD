@@ -1,0 +1,1193 @@
+/*adjusting the padding of every element in index.html*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*changing the background color of the whole body*/
+body {
+  background-color: rgb(241, 235, 235);
+  color: rgb(26, 25, 25);
+}
+
+/*makign the scrolling/transitions between sections go smoothly and ease in/out*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------HOME SECTION-------------------------------------------------------- */
+
+/*adjusting the top margin of the main header as well as setting the font, text weight, size and centering*/
+h1 {
+  margin-top: 5%;
+  color: #81775a;
+  font-size: 55px;
+  font-weight: 90;
+  margin-bottom: 0;
+  font-family: "Safira March Personal Use", sans-serif;
+  text-align: center;
+}
+
+/*adjusting the subheader as well as its color, alignmnet, font and size*/
+h2 {
+  font-family: "Localghost", sans-serif;
+  font-weight: 100;
+  color: #81775a;
+  text-align: center;
+  font-size: 25px;
+}
+
+/*adjusting the signature font and size*/
+#signature {
+  font-family: "Phitagate", sans-serif;
+  font-size: 90px;
+}
+
+/*creating a clickable link that will take the user to the following section named "about"*/
+#discover_button {
+  display: block;
+  width: 35vw;
+  font-family: "Montserrat", sans-serif;
+  margin-left: auto;
+  font-size: 15px;
+  margin-top: 50px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*adjusting the link of the discover_button*/
+#discover_button a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: aliceblue;
+  background-image: linear-gradient(rgb(255, 255, 255) 0.0 0.0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+
+/*adding underline transition*/
+#discover_button a::after,
+#discover_button a:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+
+#discover_button a:link,
+#discover_button a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+
+/*managing the position of the paragraph ofund on the main page, as well as its font, size and color*/
+#landing_page_paragraph {
+  width: 25vw;
+  margin-left: 15vw;
+  padding: 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
+  color: #595050;
+}
+
+/*adjusting of the container that helps with the creation of the hero page, by 
+setting its backgorund by an image, as well as centering it and making itas wide 
+and high as the viewport*/
+#landing_page_image_container {
+  background-image: url("../media/landing_page_image.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img {
+  margin: 20px 20px;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+#desktop {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  white-space: nowrap;
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#desktop a {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+  background-image: linear-gradient(rgb(255, 255, 255) 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+
+#desktop a::after,
+#desktop a:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+
+#desktop a:link,
+#desktop a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/*end of navigation*/
+
+#home_text {
+  width: 50vw;
+  margin-left: auto;
+}
+
+
+/*adjustements made when the screen is 1145px and smaller until the next query*/
+@media screen and (max-width: 1145px) {
+
+
+  /*adjusting the main titile*/
+  #main_title {
+    width: 40vw;
+    margin-left: 15%;
+  }
+
+  /*adjusting the subheading found on the main page*/
+  #home_subheading {
+    width: 40vw;
+    margin-left: 15%;
+  }
+
+  /*adjusting the paragraph foudn on the main seciton/page*/
+  #landing_page_paragraph {
+    margin-left: 35%;
+    font-size: 15px;
+  }
+
+  /*adjusting the discover button*/
+  #discover_button {
+    width: 25vw;
+    margin-left: 35%;
+    margin-top: 0%;
+  }
+
+}
+
+/*adjustements made when the screen is 900px and smaller until the next query*/
+@media screen and (max-width: 900px) {
+
+  /*adjusting the main subheading*/
+
+  #home_subheading {
+    color: white;
+    margin: auto;
+    width: auto;
+
+  }
+
+  /*adjusting the main titile*/
+  #main_title {
+    color: white;
+    margin: auto;
+    width: auto;
+
+  }
+
+  /*adjusting the paragraph on the landing pase*/
+  #landing_page_paragraph {
+    color: white;
+    margin: auto;
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+
+  }
+
+
+  /*adjusting the discover button on the landing page*/
+  #discover_button {
+    padding-bottom: 2%;
+    margin-left: 0;
+    width: auto;
+    text-align: center;
+
+  }
+
+  /*adjusting the landing page content*/
+  #home_text {
+    background-color: rgba(62, 62, 62, 0.5);
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin: auto;
+    width: 50vw;
+    height: auto;
+    padding: 2%;
+  }
+
+  /*adjustements made when the screen is 700px and smallery*/
+  @media screen and (max-width: 700px) {
+
+    /*adding background color for all content save for the menu in order to gain better readibility*/
+    #home_text {
+      margin: auto;
+      width: 60vw;
+      padding: 1%;
+      height: 70vh;
+      background-color: rgba(62, 62, 62, 0.5);
+
+    }
+
+    /*adjusting the main titile*/
+    #main_title {
+      margin-top: 4%;
+      font-size: 45px;
+      text-align: center;
+      width: auto;
+    }
+
+    /*adjusting the main home_subheading*/
+    #home_subheading {
+      font-size: 25px;
+      width: auto;
+      margin-bottom: 2%;
+      font-weight: 100;
+    }
+
+    /*adjusting the main paragraph*/
+
+    #landing_page_paragraph {
+      width: auto;
+      margin-bottom: 2%;
+      font-size: 17px;
+      text-align: center;
+    }
+
+    /*adjusting the main button*/
+    #discover_button {
+      text-align: center;
+      width: auto;
+      margin-left: 0;
+    }
+
+    /*adjusting the top menubar*/
+
+    #desktop {
+      width: 100vw;
+      margin-top: 2vh;
+      margin-bottom: 4vh;
+    }
+
+    /*adjusting the website logo*/
+    #home_white_icon {
+      display: none;
+    }
+
+    /*adjusting the clickable links of the menu bar, as well as changing their color for better readibility*/
+    #desktop a {
+      padding-right: 2%;
+      font-size: 25px;
+      color: rgb(24, 25, 26);
+      background-image: linear-gradient(rgb(71, 66, 66) 0 0);
+      transition: background-size 0.3s, background-position 0s 0.3s;
+    }
+
+    #desktop a:link,
+    #desktop a:visited {
+      color: rgb(71, 66, 66);
+      text-decoration: none;
+    }
+
+
+  }
+
+
+}
+
+
+/* ------------------------------------ABOUT US SECTION-------------------------------------------------------- */
+
+
+/*setting a custom image backgorund to the section called "about us", as well as setting its height to fill the viewport*/
+#About {
+  background-image: url("../media/about_us_page_image.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#about_us_profile {
+  width: 50vw;
+  height: 100vh;
+  float: left;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image_corner {
+  width: 25vw;
+  margin-bottom: 28%;
+  margin-right: 15%;
+  height: auto;
+  position: absolute;
+}
+
+#image_corner_right {
+  width: 25vw;
+  margin-top: 28%;
+  margin-left: 15%;
+  height: auto;
+  position: absolute;
+  transform: rotate(180deg);
+
+}
+
+#amelia_heirr_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 29vw;
+}
+
+#about_us_paragraph {
+  text-align: justify;
+  width: 50vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #595050;
+  float: left;
+  position: relative;
+}
+
+#about_us_paragraph p {
+  padding-top: 1%;
+  justify-content: center;
+  width: 40vw;
+  padding: 2%;
+  line-height: 15pt;
+}
+
+#about_us_paragraph h2 {
+  font-size: 45px;
+  font-weight: 90;
+  font-family: "Safira March Personal Use", sans-serif;
+  text-align: left;
+}
+
+#content {
+  width: 50vw;
+  position: absolute;
+  margin-top: 7em;
+}
+
+#about_us_quote {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+#about_us_arrow_down {
+  display: block;
+  margin-left: 15vw;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+#about_us_arrow_down:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1170px) {
+  #about_us_profile {
+    width: 40vw;
+  }
+
+  #content {
+    width: 60vw;
+
+  }
+
+  #the_story_header {
+    font-size: 25px;
+    width: auto;
+  }
+
+  #about_us_paragraph {
+    width: auto;
+    font-size: 17px;
+  }
+
+  #content {
+    font-size: 13px;
+    width: 60vw;
+  }
+
+  #about_us_paragraph p {
+    width: auto;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+
+  @media screen and (max-width: 900px) {
+
+    #the_story_header {
+      font-size: 10px;
+      margin: 0%;
+      padding: 0%;
+      padding-left: 4%;
+    }
+
+    #about_us_profile {
+      display: none;
+    }
+
+    #content {
+      width: 100vw;
+    }
+
+    #about_us_arrow_down {
+      margin: auto;
+    }
+
+
+
+  }
+
+
+}
+
+
+
+/* ------------------------------------ORDER SECTION-------------------------------------------------------- */
+#Order {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+#order_heading {
+  padding-top: 2%;
+  font-size: 50px;
+  font-weight: 90;
+  font-family: "Safira March Personal Use", sans-serif;
+  text-align: center;
+}
+
+#order_paragraph {
+  margin-left: auto;
+  font-size: 17px;
+  margin-right: auto;
+  width: 62vw;
+  text-align: center;
+  line-height: 22pt;
+  font-family: "Montserrat", sans-serif;
+}
+
+#order_choice_container {
+  margin-top: 0%;
+  display: flex;
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.order_arrow_down {
+  padding-top: 4%;
+  display: block;
+  margin-left: 15vw;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+.order_arrow_down:hover {
+  transform: scale(1.1);
+}
+
+#order_left_option {
+  padding-top: 10%;
+  float: left;
+  display: block;
+  margin-right: 15vw;
+  height: 40vh;
+  background-image: url("../media/brown_stain.png");
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  transition: transform 0.4s;
+  text-decoration: none;
+}
+
+#order_right_option {
+  padding-top: 10%;
+  float: left;
+  display: block;
+  height: 40vh;
+  background-image: url("../media/pink_stain.png");
+  background-repeat: no-repeat;
+  background-size: 35vw;
+  transition: transform 0.4s;
+
+}
+
+
+#order_left_option:hover,
+#order_right_option:hover {
+  transform: scale(1.1);
+  transition-timing-function: linear;
+  fill-opacity: 50;
+}
+
+
+#order_get_started_heading,
+#order_no_idea_heading {
+  padding-top: 2%;
+  font-size: 15px;
+  font-weight: 90;
+  font-family: "Safira March Personal Use", sans-serif;
+  text-align: center;
+}
+
+#order_get_started_paragraph,
+#order_no_idea_paragraph {
+  margin-top: 2%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  float: left;
+  text-align: center;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  #order_no_idea_heading,
+  #order_get_started_heading {
+    font-size: 13px;
+  }
+
+  #order_no_idea_paragraph,
+  #order_get_started_paragraph {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  #order_heading {
+    padding-top: 10%;
+  }
+
+  #order_paragraph {
+    font-size: 15px;
+    margin: auto;
+    width: 75vw;
+  }
+
+
+  #order_left_option,
+  #order_right_option {
+    width: 50vw;
+    margin: 0%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  #order_no_idea_heading,
+  #order_get_started_heading {
+    font-size: 15px;
+  }
+
+  #order_no_idea_paragraph,
+  #order_get_started_paragraph {
+    display: none;
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+
+    #order_heading {
+      padding-top: 10%;
+    }
+
+    #order_left_option,
+    #order_right_option {
+      margin-top: 10%;
+      height: 20vh;
+    }
+
+    #order_no_idea_heading,
+    #order_get_started_heading {
+      font-size: 10px;
+    }
+
+    .order_arrow_down {
+      width: 7vw;
+    }
+
+    #order_paragraph {
+      width: 90vw;
+    }
+  }
+
+}
+
+/* ------------------------------------PREMADE SECTION-------------------------------------------------------- */
+
+#Premade {
+  height: 100vh;
+  background-color: #ededed;
+  display: flex;
+}
+
+#first_card,
+#second_card,
+#third_card {
+  background-color: #fbfeff;
+  height: 91vh;
+  width: 28vw;
+  margin: auto;
+  padding: 1%;
+  justify-content: center;
+}
+
+#first_cake_image,
+#second_cake_image,
+#third_cake_image {
+  display: block;
+  margin: auto;
+  height: 60vh;
+  width: auto;
+}
+
+.card_headers {
+  font-size: 15px;
+}
+
+.card_subheaders {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2%;
+}
+
+.card_paragraphs {
+  font-size: 17px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+@media screen and (max-width: 1320px) {
+  #Premade {
+    display: inline-table;
+    width: 100vw;
+  }
+
+  #first_card,
+  #second_card,
+  #third_card {
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 75vw;
+    height: 60vh;
+  }
+
+
+  #first_cake_image,
+  #second_cake_image,
+  #third_cake_image {
+    max-height: 60vh;
+    width: auto;
+    float: left;
+    margin: auto;
+    margin-right: 4%;
+  }
+
+  .card_headers {
+    font-size: 35px;
+  }
+
+  .card_subheaders {
+    font-size: 25px;
+  }
+
+  .card_paragraphs {
+    font-size: 20px;
+    display: inline;
+  }
+
+
+
+  @media screen and (max-width: 1250px) {
+
+    #first_cake_image,
+    #second_cake_image,
+    #third_cake_image {
+      max-height: 60vh;
+      height: auto;
+      float: left;
+      margin: auto;
+      margin-right: 4%;
+    }
+
+    .card_headers {
+      font-size: 25px;
+    }
+
+    .card_subheaders {
+      font-size: 15px;
+    }
+
+    .card_paragraphs {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+
+    #first_card,
+    #second_card,
+    #third_card {
+      width: 95vw;
+      height: auto;
+      margin: auto;
+      margin-bottom: 2%;
+      margin-top: 2%;
+    }
+
+    #first_cake_image,
+    #second_cake_image,
+    #third_cake_image {
+      float: none;
+      margin: auto;
+    }
+
+
+    .card_paragraphs,
+    .card_headers .card_subheaders {
+      display: block;
+    }
+
+
+  }
+
+
+
+
+
+}
+
+
+/* ------------------------------------CUSTOM SECTION-------------------------------------------------------- */
+
+#Custom {
+  height: 100vh;
+  background-color: #ede1e1;
+}
+
+.testbox {
+  width: 55vw;
+  height: 100vh;
+  float: left;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+#preview {
+  width: 45vw;
+  height: 100vh;
+  float: left;
+  display: flex;
+}
+
+.container {
+  height: auto;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+input[type="submit"] {
+  display: none;
+  width: 15vw;
+  height: 5vh;
+  background-color: #8baec3;
+
+}
+
+input[type="reset"] {
+  display: none;
+  width: 15vw;
+  height: 5vh;
+  background-color: lightcoral;
+  float: left;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#form-cake {
+  margin: auto;
+  display: flex;
+}
+
+#form_content {
+  margin: auto;
+  height: 45vh;
+  width: 45vw;
+
+}
+
+#custom_order_header {
+  margin-top: 0;
+  font-size: 50px;
+  height: 15vh;
+  text-align: left;
+}
+
+#div-cake {
+  width: 24vw;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+
+}
+
+#cake {
+  margin: auto;
+  width: 20vw;
+}
+
+#preview_image_container {
+  margin: auto;
+  border-color: #ada8a8;
+  border-style: solid;
+  border-width: 5px;
+  width: 40vw;
+  height: 45vh;
+  background-color: #ffffff;
+  display: flex;
+}
+
+form {
+  padding: 20px;
+  background: #ffffff;
+  height: 60vh;
+  box-shadow: 0 2px 5px #ccc;
+  width: 45vw;
+  margin: auto;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  outline: none;
+  border: 1px solid #095484;
+  background: #e6eef7;
+}
+
+.title-block select,
+.title-block input {
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 7px 0;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: transparent;
+}
+
+select,
+table {
+  width: 100%;
+  margin-bottom: 4%;
+}
+
+option {
+  background: #fff;
+}
+
+.question-answer label {
+  display: block;
+  padding: 0 20px 10px 0;
+}
+
+.question-answer input {
+  width: auto;
+  margin-top: -2px;
+}
+
+
+@media screen and (max-width: 1280px) {
+
+  #custom_order_header {
+    font-size: 35px;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    #custom_order_header {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+
+    .testbox {
+      width: 100vw;
+      height: 50vh;
+    }
+
+    #preview {
+      margin: auto;
+      width: 100vw;
+      height: 50vh;
+      display: flex;
+    }
+
+    #preview_image_container {
+      width: 60vw;
+      height: auto;
+    }
+
+    #custom_order_header {
+      width: auto;
+      font-size: 17px;
+      margin-bottom: 5%;
+      height: 5vh;
+    }
+
+    #form-cake {
+      float: none;
+      height: 40vh;
+      width: 60vw;
+    }
+
+    #div-cake {
+      height: 40vh;
+      width: 60vw;
+    }
+
+    #cake {
+      width: auto;
+    }
+
+    #form_content {
+      height: 30vh;
+    }
+  }
+
+
+}
+
+
+
+
+/* ------------------------------------FOOTER SECTION-------------------------------------------------------- */
+
+#Contact {
+  background-image: url("../media/footer_image.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#final_words_footer {
+  background-color: rgb(129, 120, 90, 0.69);
+  height: 50vh;
+}
+
+#final_footer_content {
+  width: 80vw;
+  margin: auto;
+  height: 20vh;
+}
+
+#signature {
+  color: white;
+  width: 25vw;
+  margin-left: 65vw;
+  padding-top: 2%;
+}
+
+#final_quote_footer {
+  font-family: 'Playfair Display', serif;
+  width: 85vw;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin: auto;
+  padding-top: 5%;
+}
+
+#empty_final_words_footer {
+  height: 7vh;
+}
+
+#contact_footer {
+  margin-left: 1vw;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  height: 15vh;
+  font-weight: 100;
+}
+
+
+#empty_container_footer {
+  height: 50vh;
+}
+
+#socials a {
+  text-decoration: none;
+  color: white;
+}
+
+#white_icon_footer {
+  margin-left: 1vw;
+  margin-top: 2%;
+  width: 6vw;
+  height: auto;
+  transition: transform 0.4s;
+
+}
+
+#white_icon_footer:hover {
+  transform: scale(1.1);
+}
+
+
+#instagram_icon,
+#facebook_icon,
+#whatsapp_icon {
+  margin-left: 1vw;
+  width: 4vw;
+  height: auto;
+  transition: transform 0.4s;
+}
+
+#instagram_icon:hover,
+#facebook_icon:hover,
+#whatsapp_icon:hover {
+  text-decoration: none;
+  color: white;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  #signature {
+    font-size: 55px;
+  }
+
+  #final_quote_footer {
+    font-size: 30px;
+  }
+
+  #contact_footer {
+    font-size: 19px;
+  }
+
+  #instagram_icon,
+  #facebook_icon,
+  #whatsapp_icon {
+    width: 7vw;
+  }
+
+  #white_icon_footer {
+    width: 10vw;
+  }
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  #signature {
+    font-size: 40px;
+  }
+
+  #final_quote_footer {
+    font-size: 27px;
+  }
+
+  #contact_footer {
+    font-size: 17px;
+  }
+
+  #instagram_icon,
+  #facebook_icon,
+  #whatsapp_icon {
+    width: 10vw;
+  }
+
+  #white_icon_footer {
+    width: 10vw;
+  }
+}
+
+
+/*MODERNIZR*/
+
+/*displaying the overlay*/
+[class*="no-"] #overlaycontainer {
+  display: block;
+}
+
+/* disabling the option for scrolling so the user only sees the display*/
+[class*="no-"] * {
+  overflow: hidden;
+}
+
+#overlaycontainer {
+  display: none;
+  background-color: rgb(231, 218, 218);
+  position: fixed;
+  margin: 0%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}

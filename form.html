@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href='assets/css/form.css'>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/safira-march-personal-use');
+    </style>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/phitagate');
+    </style>
+    <title>Amelia Heirr Custom Order</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load the JavaScript file as a module. JavaScript modules are deferred by default -->
+    <script src="js/app.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Just one more step...</h1>
+
+    <section id="cake-order-section">
+
+
+
+        <div id="cake-order">
+
+            <div id="empty-container">
+                <h2 id="header">You ordered:</h2>
+
+            </div>
+
+            <div id="form-div">
+
+                <form id="form-cake-name">
+                    <h2 id="general_header">General Information</h2>
+
+                    <div id="form-cake-inputs">
+                        <p>Full Name</p>
+                        <p id="required_name">*</p>
+                        <input type="text" class="inputbox" name="name">
+                        <p>Phone Number </p>
+                        <p id="required_phone">Incorrect format*</p>
+                        <input id="phone_number" type="text" class="inputbox" name="phone">
+                        <p>Email </p>
+                        <p id="required_email">Incorrect email address*</p>
+                        <input id="email" type="text" class="inputbox" name="email">
+                        <input type="submit" value="Submit">
+                    </div>
+
+                    <div id="confirmation_div"></div>
+                </form>
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
